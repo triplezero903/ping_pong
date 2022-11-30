@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Passion+One:wght@900&display=swap');
+
+        body {
+            margin: auto 40px;
+            -ms-overflow-style: none;
+            background-color: lightgray;
+            font-family: "Black Han Sans";
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            margin: 25px auto;
+        }
+
+        .container .divB {
+            margin: auto;
+            width: 1000px;
+        }
+
+        .container .b {
+            font-size: 70px;
+            color: #fff;
+        }
+
+        .container svg {
+            float: right;
+            color: #fff;
+            margin-top: 35px;
+        }
+
+        .accordion {
+            margin: 10px auto 40px auto;
+            width: 1000px;
+        }
+
+        .img {
+            text-align: center;
+        }
+
+        .img img {
+            width: 1000px;
+        }
+
+        .accordion-flush {
+            background-color: lightgray;
+        }
+
+        .accordion .accordion-button {
+            height: 70px;
+            font-size: 15px;
+            background-color: blue;
+            opacity: 0.7;
+            color: #fff;
+            text-align: center;
+
+        }
+
+        .accordion-item {
+            margin-bottom: 50px;
+        }
+
+        button .h3One {
+            margin-left: 30%;
+        }
+
+        button .h3Two {
+            margin-left: 40%;
+        }
+
+        button .h3Three {
+            margin-left: 45%;
+        }
+
+        ul {
+            font-size: 18px;
+            list-style: none;
+            margin: 40px 30px;
+        }
+
+        .rule li {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Rule of Pingpong</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="divB">
+            <b class="b">Rule</b>
+            <a class="svg" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path
+                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+            </a>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <div class="img">
+                    <img src="static/rule1.jpg" alt="">
+                </div>
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h3 class="h3One">Matters that require attention</h3>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="rule">
+
+                            <li>
+                                네트를 건드리면 실점으로 인정된다.
+                            </li>
+                            <li>
+                                테이블 밖으로 나가는 공은 테이블 위에 즉, 테이블 안에 위치해 있을 때 치면 <br />나가는 공이라도 자신의 실점으로 인정된다.
+                            </li>
+                            <li>
+                                탁구대에 손을 짚으면 실점으로 인정된다.
+                            </li>
+                            <li>
+                                공이 테이블 밖으로 나갈 경우 테이블 밖에서 치거나 치지 않아도 득점으로 인정된다.
+                            </li>
+                            <li>
+                                탁구 라켓을 잡은 손, 손목까지는 공에 맞고 들어가도 인정되며,<br /> 그 외의 옷 등 다른 부위에 맞고 들어가면 실점으로 인정된다.
+                            </li>
+                            <li>
+                                랠리 중 서브 넣을 때 공을 던졌다가 다시 잡거나 헛스윙을 하면 실점으로 인정된다.
+                            </li>
+                            <li>
+                                랠리 중 공이 네트를 맞고 들어가는 경우 정상적으로 진행한다.
+                            </li>
+                            <li>
+                                팬 홀더(한 쪽 면에만 러버가 있는 라켓)의 뒷면, 고무가 붙어있지 않은 나무 면으로 치면<br /> 실점으로 인정되거나 경기 진행이 불가능하다.
+                            </li>
+                            <li>
+                                손가락이나 손에 맞고 라켓에 맞아 투 터치 되어서 넘어가는 경우 인정된다.<br /> 단, 고의로 투 터치를 하는 경우 실점으로 인정된다.(공을 던지는 순간
+                                무조건
+                                넣어야
+                                한다.)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="img">
+                    <img src="static/rule2.jpg" alt="">
+                </div>
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h3 class="h3Two">Rule(Singles)</h3>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="rule">
+                            <li>
+                                탁구 경기 진행은 3세트, 5세트, 7세트, 9세트로 진행된다.
+                            </li>
+                            <li>
+                                11점제 5판 3선승제 등으로 승부를 가린다.
+                            </li>
+                            <li>
+                                선수가 포인트 득점 11점을 선취 득점하면 한 세트를 가져간다.
+                            </li>
+                            <li>
+                                서브 교대의 경우 매 2포인트마다 이루어진다.
+                            </li>
+                            <li>
+                                상대 선수가 랠리를 받아내지 못하면 득점한다.
+                            </li>
+                            <li>
+                                서브는 공을 16cm 이상 던진 후에 자기 코트에 먼저 바운드를 시켜야 하며<br />
+                                이후 상대방 선수의 코트로 공을 넘어가게 해야 한다.
+                            </li>
+                            <li>
+                                듀스가 되었을 경우 먼저 2점을 따는 쪽이 1게임을 이기게 된다.
+                            </li>
+                            <li>
+                                서브의 경우 1세트 당 5회씩 교대하며,<br /> 포인트 득점이 10점-10점과 같은 경우 듀스(동점)일 상황에선 1점마다 이루어진다.
+                            </li>
+                            <li>
+                                서브가 네트나 서포트에 닿고 들어갔을 경우 네트(노 카운트)이므로 서브를 다시 한다.
+                            </li>
+                            <li>
+                                상대 코트 가장자리에 닿은 공은 유효하다.
+                            </li>
+                            <li>
+                                한 세트가 끝날 때마다 자리를 바꿔 진행하며, 마지막 세트에서는 5점이 되면 자리를 바꾼다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="img">
+                    <img src="static/rule3.jpg" alt="">
+                </div>
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h3 class="h3Three">Doubles</h3>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="rule">
+                            <li>
+                                4명의 선수로 진행되며, 단식과 마찬가지로 11점제 5판 3선승제로 진행된다.
+                            </li>
+                            <li>
+                                서버는 공이 자기 쪽 코트의 오른쪽 반 안에서 바운드 된 후 <br /> 대각선 반대편의 상대방 코트 안에 바운드 되도록 서브해야 한다.
+                            </li>
+                            <li>
+                                각 팀의 선수들은 번갈아 가며 공을 쳐야 한다.
+                            </li>
+                            <li>
+                                2명의 선수는 서브와 리시브는 똑같이 2번씩 번갈아서 진행하며,<br /> 본인이 서브를 2번 했다면 서브권은 상대방에게 가고 리시브는 본인의 파트너가 하게
+                                된다.
+                            </li>
+                            <li>
+                                듀스의 경우 똑같이 서브는 한 번씩 번갈아서 넣는다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.html"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
