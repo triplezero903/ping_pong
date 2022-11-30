@@ -96,5 +96,5 @@ if __name__ == "__main__":
     db.app = app
     
 
-    app.debug = True
+#    app.debug = True
     app.run()
